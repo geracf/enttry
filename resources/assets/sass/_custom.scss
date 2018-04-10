@@ -1,0 +1,161 @@
+nav {
+  box-shadow: none;
+  // margin-bottom: 0 !important;
+}
+
+button.navbar-toggle {
+  margin-left: 15px;
+  border: 0;
+  span.icon-bar {
+    background-color: $jobs-blue !important;
+  }
+}
+
+.arena--untainted {
+  width: calc(100% - 160px);
+  margin-left: 130px;
+}
+
+.arena,
+.arena--full-height {
+  width: calc(100% - 100px);
+  margin-left: 100px;
+  margin-top: 50px;
+  overflow-y: auto;
+
+  .container,
+  .row {
+    max-width: 100%;
+  }
+
+  .row {
+    padding-left: 40px;
+  }
+
+  .company-dashboard .row {
+    padding-left: 29px;
+  }
+
+}
+
+.arena--full-height {
+  margin-top: 0px;
+  .row {
+    padding-left: 15px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+
+.title {
+  position: relative;
+  h1 {
+    margin-left: 20px;
+    display: inline-block;
+  }
+  a {
+    position: absolute;
+    margin-left: 40px;
+    top: 50%;
+    transform: translateY(-30%);
+  }
+}
+
+th {
+  color: darken($menu-inactive, 20%);
+}
+
+.ready {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: white;
+  height: 50px;
+  width: 50px;
+  background-color: $jobs-blue;
+  border-radius: 50px;
+  margin: 30px;
+
+  i {
+    text-align: center;
+    margin: 3px 20.5px;
+  }
+}
+
+@import "parts/cards";
+@import "parts/side-menu";
+@import "parts/chats";
+@import "parts/discover";
+@import "parts/cv";
+@import "parts/mixins";
+@import "parts/media";
+@import "parts/featured-work";
+@import "parts/start";
+@import "parts/offers";
+@import "parts/students";
+@import "parts/student-show";
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.no-padding {
+  @include no-padding-top();
+  @include no-padding-right();
+  @include no-padding-bottom();
+  @include no-padding-left();
+}
+
+.no-left-padding {
+  @include no-padding-left();
+}
+
+.no-right-padding {
+  @include no-padding-right();
+}
+
+.alert--small {
+  width: 500px;
+  display: block;
+  margin: 10px auto;
+}
+
+.delete-button {
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.my_offers--container,
+.my_offers--container__form {
+  display: block;
+  width: calc(100% - 30px);
+  background-color: white;
+  margin: 15px auto;
+  padding: 15px;
+
+  table {
+    margin-bottom: 0;
+  }
+
+  form {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.my_offers--container__form {
+  form {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .row {
+    padding-left: 0px;
+    max-width: initial !important;
+    width: auto !important;
+  }
+}

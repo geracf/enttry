@@ -1,0 +1,84 @@
+form {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.row.form {
+    padding: 10px 0;
+}
+
+.form-group {
+    width: 100%;
+    input,
+    select {
+        width: 100% !important;
+    }
+
+    select,
+    .option {
+        color: darken($menu-inactive, 10%);
+    }
+
+    .button {
+        font-family: 'Proxima Nova';
+    }
+}
+
+.result-container {
+    min-height: 220px;
+    padding-left: 0px !important;
+    margin-left: 5px !important;
+    div {
+        height: 220px;
+        margin: 10px 0;
+    }
+}
+
+.result {
+    width: calc(100% - 41px);
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 20px;
+    .result__image {
+        width: 100px;
+        position: relative;
+        img {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 250px;
+            // height: 250px;
+            // border-radius: $border-radius 0 0 $border-radius !important;
+            width: 70px;
+            height: 70px;
+            margin-left: 15px;
+            margin-top: 13px;
+            border-radius: 50px !important;
+        }
+    }
+
+    .result__text {
+        width: calc(100% - 110px);
+        display: inline-block;
+        text-align: right;
+        p {
+            padding: 5px 8px;
+            margin-bottom: 0px;
+        }
+        p.name {
+            color: $jobs-blue;
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 15px 8px 0 8px;
+        }
+
+    }
+
+    .row {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+}
+
+

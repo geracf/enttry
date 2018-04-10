@@ -1,0 +1,462 @@
+$white: #FFFFFF;
+$blue: #1DA9FC;
+$greyish: #F4F7F9;
+$gray_light: #C5CDD7;
+$gray_lighter: #C5CDD7;
+$greyer: #ADAFB2;
+$facebook: #3b5998;
+
+$input_height: 64px;
+$border_radius: 6px;
+
+html body{
+  overflow-x: hidden;
+}
+
+nav {
+  height: 100px !important;
+  li {
+    margin: 8px 0 0 0 !important;
+    a.btn-link {
+      color: #034356;
+      margin: 0;
+      box-shadow: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.button-collapse{
+  color: #ADAFB2;
+}
+
+.container-fluid.gray {
+  padding-bottom: 0;
+  min-height: calc(100vh - 310.4px);
+}
+
+.side-nav{
+  width: 300px !important;
+}
+
+@mixin gradient($top_color, $bottom_color) {
+  background-image: -webkit-linear-gradient(top, $top_color 0%, $bottom_color 100%);
+  background-image: linear-gradient(to bottom, $top_color 0%, $bottom_color 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($top_color)}', endColorstr='#{ie-hex-str($bottom_color)}', GradientType=0); // IE9 and down
+}
+
+.nav-wrapper{
+  background-color: $white;
+  height: 112px !important;
+  padding: 12px 24px 0px 24px;
+  max-height: 100px;
+  img {
+    width: 200px;
+    margin: 11.21px 0;
+  }
+}
+
+.main{
+  background-image: url("/img/student-background.png");
+  background-size: cover;
+  margin-bottom: 0px;
+  min-height: calc(100vh - 310.4px);
+  h3 {
+    font-style: 2.6rem;
+    color: white;
+    margin: 10px 20px;
+  }
+}
+
+.button{
+  @include gradient(rgba(255,255,255,.25), rgba(255,255,255,0));
+  border-radius: $border_radius;
+  border: solid 3px $blue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.0075);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  height: $input_height;
+  line-height: $input_height - 2;
+  outline: none;
+  text-align: center !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 140px;
+  color: $blue;
+}
+
+.buttonactive{
+  border-radius: $border_radius;
+  border: solid 3px $blue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.0075);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  background-color: $blue;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  height: $input_height;
+  line-height: $input_height - 2;
+  outline: none;
+  text-align: center !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 140px;
+
+}
+
+input.input.button-grey,
+.button-grey{
+  @include gradient(rgba(255,255,255,.25), rgba(255,255,255,0));
+  border-radius: $border_radius;
+  border: solid 1px $gray_light;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.0075);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+
+  font-size: 14px;
+  font-weight: normal;
+  height: $input_height;
+  line-height: $input_height - 2;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+  color: #C5CDD7;
+  z-index: -1;
+}
+
+input.input.button-grey:focus {
+  border-bottom: 1px solid $blue !important;
+  -webkit-box-shadow: 0 1px 0 0 $blue !important;
+  box-shadow: 0 1px 0 0 $blue !important;
+}
+
+.btn-login,
+.btn-fb {
+  text-transform: none;
+  font-size: 14px;
+  color: white;
+  height: 48px;
+  // line-height: 2;
+  padding: 7px 50px;
+}
+
+.btn-login {
+  background-color: $blue;
+}
+
+.btn-fb {
+  background-color: $facebook;
+}
+
+.btn-fb:hover {
+  background-color: darken($facebook, 10%);
+  color: white;
+}
+
+.contact-button{
+  border-radius: $border_radius;
+  border: solid 3px white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.4rem;
+  padding-left: 18px;
+  padding-right: 30px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  text-align: center;
+  margin: 25px 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: block;
+  width: calc(100% - 100px);
+}
+
+.verticalLine a {
+  border-right:  solid $greyer;
+  margin: 0px 10px 0px 10px;
+  color: $greyer;
+  font-size: 15px;
+  padding-right: 35px;
+  text-align: left;
+}
+
+.modal {
+  // background-color: transparent !important;
+  // box-shadow: none !important;
+}
+
+.sign-in{
+  margin-top: 5%;
+  margin-bottom:  2%;
+}
+
+.blue-title{
+  color: $blue;
+  text-align: center;
+}
+
+.or{
+  text-align: center;
+  color: $greyer;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#header{
+  margin-top: 60px;
+  margin-left: 10%;
+  color: white
+}
+
+.info{
+  margin-top: 3%;
+  min-height: calc(100vh - 310.4px);
+}
+.white-text{
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+.contact-us{
+  color: white;
+  font-size: 20px;
+  width: calc(100% - 30px);
+  display: block;
+  margin: auto;
+}
+
+.contact-us a:hover{
+  // width: 436px;
+  background: white;
+  text-decoration: none;
+  color:$blue;
+}
+
+.gray{
+  background-color: $greyish;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.header{
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.comp-car{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.company-img img{
+  display: block;
+  margin: 0 auto;
+  max-height: 70px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.contact{
+  margin-top: 15px;
+}
+
+textarea{
+  height: 500px;
+}
+
+@media only screen and (max-width: 995px) {
+    .info{
+      display: none;
+    }
+
+    #sign-in{
+      margin-top: 70px
+    }
+
+}
+
+.message{
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.nav-wrapper a:hover{
+  text-decoration: none;
+  background: transparent;
+}
+
+.nav-wrapper li{
+  margin-right: 24px;
+}
+
+.square{
+  background: #1E2C3C;
+  height: 607px;
+}
+
+.blue-bg img{
+  width: 100%
+
+}
+
+.blue-bg{
+  background: #1DA9FC;
+  padding-bottom: 70px;
+  color: white;
+}
+
+.white{
+  padding-bottom: 70px;
+}
+
+.price{
+  text-align: center;
+  height: 400px;
+}
+.price-class{
+  text-align: center;
+}
+
+.price-cuantity{
+  color: $blue;
+  font-size: 60px;
+}
+
+
+
+.pricebtn{
+  bottom: 10px;
+  position: absolute;
+  width: 85%
+}
+
+.short{
+  margin-top: 50px
+}
+
+footer{
+  color: white;
+  background-color: #000000;
+
+  img.brand-logo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  p.strong {
+    font-size: 22px;
+    font-weight: bold;
+    color: darken(white, 15%);
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+  }
+
+  a:hover {
+    color: darken(white, 15%);
+  }
+}
+
+.pricing {
+  margin-top: 100px;
+  margin-bottom: -60px;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.cost {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.cost:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.cost .header {
+    background-color: $brand-info;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.cost .header.header--primary {
+  background-color: #337AB7;
+}
+
+.cost li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.cost .grey {
+    background-color: lighten(#C5CDD7, 10%) !important;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    height: inherit;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+nav .button-collapse {
+  margin: 8px 0;
+}
+
+.main--padded {
+  padding: 20px !important;
+}
+
+.landing.card {
+  margin: 50px 10px;
+}

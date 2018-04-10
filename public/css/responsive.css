@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1100px) {
+  .accountContainer{
+    left: 300px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .Cgreeting{
+    background-size: 100% contain;
+  }
+  .greeting{
+    background-size: 100% contain;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .greeting-content{
+    width: 80%
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .createAccount{
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .description-title{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+  }
+  .description-text{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px
+  }
+  .mac{
+    padding-top: 50px;
+  }
+  .mac img{
+    width: 70%;
+  }
+  .right{
+    position: relative;
+    left: 10px
+  }
+  .register{
+    width: 100%
+  }
+  .accountContainer{
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .Cmac img{
+    width: 25%;
+    margin-left: 38% !important;
+  }
+  .Cdescription-title{
+    font-size: 35px
+  }
+  .company{
+    margin-top: 100px
+  }
+  .company-title{
+    font-size: 40px;
+    margin-top: 20px !important;
+  }
+  .Cdescription-text{
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .prices{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-top: 17vh !important;
+  }
+  .pCard{
+    height: 50vh !important;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .Cmac img{
+    width: 35%;
+    margin-left: 33% !important;
+  }
+  .animation-container{
+    width: 80%
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .Cmac img{
+    width: 45%;
+    margin-left: 28% !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .Cdescription-title{
+    font-size: 25px
+  }
+  .Cdescription-text{
+    font-size: 15px !important;
+  }
+  .description-title{
+    font-size: 25px
+  }
+  .description-text{
+    font-size: 15px !important;
+  }
+  .company-title{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-brand img{
+    height: 50px !important
+  }
+  .greeting-title{
+    font-size: 30px !important;
+  }
+  .greeting-title2{
+    font-size: 15px !important;
+  }
+  .create{
+    width: 100% !important
+  }
+  .create-title{
+    font-size: 20px;
+  }
+  .facebook{
+    width: 190px;
+  }
+}
+
+img.img {
+  max-width: 100%;
+}
+
+.container.companies {
+  margin-top: 50px;
+}

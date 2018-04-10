@@ -1,0 +1,121 @@
+.bubble__container {
+    max-width: calc(100% - 20px);
+    margin: 30px auto 0px auto;
+}
+
+    [class*='circle'] {
+        background-color: white;
+        border-radius: 90px;
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: auto;
+    }
+
+    .fa-check-circle-o {
+        height: initial;
+        width: initial;
+    }
+
+        .circle--small {
+            height: 60px;
+            width: 60px;
+            margin: 15px auto;
+        }
+
+    .offer__title {
+        margin-top: 20px;
+        text-align: center;
+        color: lighten($jobs-blue, 20%);  /* +10%, $jobs-blue; */
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .offer__overview {
+        max-width: calc(100% - 20px);
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        p {
+            color: lighten(#8a6d3b, 30%);
+            float: right;
+            margin: 20px 10px 0;
+            vertical-align: middle;
+        }
+    }
+
+    .offer__description {
+        p {
+            color: darken($menu-inactive, 10%);
+            float: left;
+        }
+    }
+
+    .offer__section-title {
+        h3 {
+            margin: 0px;
+        }
+    }
+
+    .offer__info {
+        p {
+            float: right;
+        }
+        p, li {
+            margin: 0px;
+            color: darken($menu-inactive, 10%);
+        }
+        li:first-child {
+            margin-top: 15px;
+        }
+    }
+
+    .offer__actions {
+        margin-top: 50px;
+        .btn {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: -1px;
+            border-radius: 0 0 8px 8px;
+        }
+    }
+
+    .map__container {
+        margin-top: 30px;
+    }
+
+    div#map,
+    div#modal-map {
+        width: 100% !important;
+        height: 300px !important;
+        margin-bottom: 30px;
+    }
+
+    .badge{
+        margin: 5px 2.5px;
+        display: inline-block;
+    }
+    .badge.btn-danger {
+        background-color: #bf5329;
+        margin-left: -2.5px;
+        cursor: pointer;
+    }
+
+    .fixed-height {
+        p {
+            height: 100px !important;
+        }
+    }
+
+    .card-action.info-pay,
+    .card-content {
+        height: 100px !important;
+    }
+
+    .offer {
+        display: inline-block;
+        margin: 20px;
+    }

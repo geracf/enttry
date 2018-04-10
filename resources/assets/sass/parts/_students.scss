@@ -1,0 +1,65 @@
+.student {
+    width: 400px;
+    margin: 15px 15px 0 0;
+    max-height: 165px;
+    display: inline-block;
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.2);
+
+    .row {
+        padding-left: 15px;
+    }
+}
+
+
+
+    .student__avatar {
+        background-color: rgb(197, 205, 215);
+        height: 165px;
+        border-radius: $border-radius 0 0 $border-radius;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+    }
+
+    .student__details {
+        padding-left: 12px;
+
+        hr {
+            margin: 15px 0;
+        }
+
+        p {
+            color: rgb(177, 179, 182);
+        }
+
+        .title {
+            color: black;
+            margin: 11px 0 0 0;
+        }
+    }
+
+.fab-container {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+    .fab {
+        display: inline-block;
+        background-color: $jobs-blue;
+        border-radius: 60px;
+        height: 50px;
+        width: 50px;
+
+        i.fa {
+            color: white;
+            margin: 12px 20px;
+        }
+    }

@@ -1,0 +1,27 @@
+.featured-work {
+    .btn-add {
+        margin: 10px;
+    }
+}
+
+    .featured-work__wrapper {
+        overflow-y: auto;
+        max-height: 280px;
+    }
+
+    .featured-work__wrapper.extended {
+        max-height: 620px;
+    }
+
+    .featured-work__container {
+        margin: 20px;
+        padding: 15px;
+        min-width: 270px;
+    }
+
+    .featured-work__image {
+        img {
+            height: 170px;
+            border-radius: 0px !important;
+        }
+    }

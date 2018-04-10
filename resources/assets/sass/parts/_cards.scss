@@ -1,0 +1,115 @@
+.card {
+  color: darken($menu-inactive, 30%);
+  border-radius: $border-radius;
+  background-color: white;
+  border: 1px solid $menu-inactive;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  img {
+    max-height: 200px;
+    width: 100%;
+    border-radius: $border-radius $border-radius 0 0 !important;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      display: inline-block;
+      min-width: calc(50% - 3px);
+    }
+  }
+
+  .card-content,
+  .card-action.info-pay {
+    padding: 10px;
+    border-bottom: 1px solid $menu-inactive;
+    border-radius: 0px !important;
+  }
+
+  .card-content {
+    .company {
+      margin-top: 50px;
+      color: #1DA9FC;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-action {
+    padding: 10px 0;
+    color: darken($menu-inactive, 30%) !important;
+    border-radius: 0 0 $border-radius $border-radius !important;
+    p {
+      margin: 5px 15px;
+    }
+    a {
+      margin: 15px;
+      color: $brand-warning;
+      text-transform: none !important;
+    }
+    ul {
+      margin-bottom: -5px;
+    }
+    .btn {
+      width: 100%;
+      margin: 0 0 -12px 0;
+      padding: 15px;
+      border-radius: 0 0 10px 10px;
+      color: white;
+      transition: .5s;
+      font-weight: bold;
+    }
+  }
+}
+
+  .card.hollow {
+    background-color: transparent;
+    color: $menu-inactive;
+    border-radius: $border-radius;
+    border: 3px solid $menu-inactive;
+    text-align: center;
+    min-height: 230px;
+  }
+
+  .card.striped {
+    padding: 25px;
+    display: block;
+    margin: auto;
+    width: calc(100% - 12.5px);
+  }
+
+.card-company {
+  display: block;
+}
+
+  .card-company__image {
+    display: inline-block;
+    img {
+      height: 250px;
+      width: 250px;
+      padding: 25px;
+      border-radius: 0;
+    }
+  }
+
+  .card-company__bio {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 300px);
+    .company-info {
+      border-bottom: 0px;
+    }
+  }
+
+  p.no-applications {
+    margin-left:20px;
+  }
+
+.favorite-star {
+  color: darken(yellow, 5%);
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,93 @@
+@media screen and (max-width: 559px) {
+  .card-company__image {
+    width: 100% !important;
+    img {
+      height: auto !important;
+      display: block !important;
+      margin: auto !important;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .card-company__bio {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .arena,
+  .arena--full-height {
+    width: 100%;
+    margin: 0;
+  }
+
+    .arena--untainted {
+      width: calc(100% - 70px);
+      margin-left: 40px;
+    }
+
+  .offer {
+    margin-bottom: 20px;
+  }
+
+  .table-responsive {
+    border: 0 !important;
+  }
+
+  .offer {
+    margin-bottom: 30px;
+  }
+
+    .offer__overview {
+      max-width: 100% !important;
+    }
+
+  .project {
+    width: calc(100% - 60px);
+  }
+
+  .add-work {
+    height: 130px !important;
+    width: 130px !important;
+  }
+
+  .no-padding-xs {
+    @include no-padding-top();
+    @include no-padding-right();
+    @include no-padding-bottom();
+    @include no-padding-left();
+  }
+  .no-top-padding-xs {  @include no-padding-top(); }
+  .no-right-padding-xs {  @include no-padding-right(); }
+  .no-bottom-padding-xs {  @include no-padding-bottom(); }
+  .no-left-padding-xs {  @include no-padding-left(); }
+}
+
+@media screen and (max-width: 991px) {
+  .card-responsive {
+    margin-bottom: 30px;
+    padding: 0;
+    .card {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+
+  .offer {
+    margin: 15px auto;
+    max-width: 340px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .offer {
+    margin-bottom: 30px;
+    max-width: 350px;
+  }
+}
